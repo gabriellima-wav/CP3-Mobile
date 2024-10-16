@@ -22,137 +22,143 @@
         android:rowCount="6"
         android:padding="8dp">
 
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_columnWeight="1"
-        android:layout_margin="8dp"
-        android:orientation="vertical"
-        android:gravity="center">
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/relogio1" />
-
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:id="@+id/layoutWatch1"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="Relógio Dourado"
-            android:textColor="@android:color/white" />
-    </LinearLayout>
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:orientation="vertical"
+            android:gravity="center">
 
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_columnWeight="1"
-        android:layout_margin="8dp"
-        android:orientation="vertical"
-        android:gravity="center">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/relogio1" />
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/relogio2" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Relógio Dourado"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:id="@+id/layoutWatch2"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Relógio Prata"
-            android:textColor="@android:color/white"
-            android:gravity="center" />
-    </LinearLayout>
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:orientation="vertical"
+            android:gravity="center">
 
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_columnWeight="1"
-        android:layout_margin="8dp"
-        android:orientation="vertical"
-        android:gravity="center">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/relogio2" />
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/relogio3" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Relógio Prata"
+                android:textColor="@android:color/white"
+                android:gravity="center" />
+        </LinearLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:id="@+id/layoutWatch3"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Relógio Dourado e Azul"
-            android:textColor="@android:color/white"
-            android:gravity="center" />
-    </LinearLayout>
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:orientation="vertical"
+            android:gravity="center">
 
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_columnWeight="1"
-        android:layout_margin="8dp"
-        android:orientation="vertical"
-        android:gravity="center">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/relogio3" />
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/relogio4" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Relógio Dourado e Azul"
+                android:textColor="@android:color/white"
+                android:gravity="center" />
+        </LinearLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:id="@+id/layoutWatch4"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Relógio Dourado e Branco"
-            android:textColor="@android:color/white"
-            android:gravity="center" />
-    </LinearLayout>
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:orientation="vertical"
+            android:gravity="center">
 
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_columnWeight="1"
-        android:layout_margin="8dp"
-        android:orientation="vertical"
-        android:gravity="center">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/relogio4" />
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/relogio5" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Relógio Dourado e Branco"
+                android:textColor="@android:color/white"
+                android:gravity="center" />
+        </LinearLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:id="@+id/layoutWatch5"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Relógio Prata e Verde"
-            android:textColor="@android:color/white"
-            android:gravity="center" />
-    </LinearLayout>
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:orientation="vertical"
+            android:gravity="center">
 
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_columnWeight="1"
-        android:layout_margin="8dp"
-        android:orientation="vertical"
-        android:gravity="center">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/relogio5" />
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/relogio6" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Relógio Prata e Verde"
+                android:textColor="@android:color/white"
+                android:gravity="center" />
+        </LinearLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:id="@+id/layoutWatch6"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="SmartWatch Preto"
-            android:textColor="@android:color/white"
-            android:gravity="center" />
-    </LinearLayout>
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:orientation="vertical"
+            android:gravity="center">
 
-</GridLayout>
-    </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/relogio6" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SmartWatch Preto"
+                android:textColor="@android:color/white"
+                android:gravity="center" />
+        </LinearLayout>
+
+    </GridLayout>
+</LinearLayout>

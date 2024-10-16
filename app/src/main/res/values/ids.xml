@@ -3,4 +3,11 @@
     <item name="welcome_text" type="id" />
     <item name="next_button" type="id" />
     <item name="main" type="id" />
+    <item name="layoutWatch1" type="id" />
+    <item name="layoutWatch2" type="id" />
+    <item name="layoutWatch3" type="id" />
+    <item name="layoutWatch4" type="id" />
+    <item name="layoutWatch5" type="id" />
+    <item name="layoutWatch6" type="id" />
+    <item name="textViewWatchName" type="id" />
 </resources>
