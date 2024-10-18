@@ -38,6 +38,16 @@
             android:name=".WatchDetailsActivity"
             android:exported="true" />
 
+        <!-- Declaração da WatchFormActivity para criar/editar relógios -->
+        <activity
+            android:name=".WatchFormActivity"
+            android:exported="true" />
+
+        <!-- Declaração da DevelopersActivity para a tela de desenvolvedores -->
+        <activity
+            android:name=".DevelopersActivity"
+            android:exported="true" />
+
     </application>
 
 </manifest>

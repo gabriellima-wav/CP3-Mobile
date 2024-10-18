@@ -4,6 +4,8 @@ data class Watch(
     val id: Long,
     val name: String,
     val description: String,
-    // Adicione este campo se tiver imagens
-    val imageResId: Int = 0
+    val imageResId: Int,
+    val brand: String,
+    val price: Double,
+    val releaseDate: String
 )
