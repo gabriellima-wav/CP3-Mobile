@@ -1,24 +1,23 @@
-package com.example.cp3mobile
+package com.example.cp3_mobile
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
-import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import com.example.cp3_mobile.R
+import com.google.android.material.button.MaterialButton
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var nextButton: MaterialButton
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setTheme(R.style.AppTheme)
         setContentView(R.layout.activity_main)
 
-        // Encontre o botão no layout
-        val nextButton: Button = findViewById(R.id.next_button)
+        nextButton = findViewById(R.id.next_button)
 
-        // Configure um ouvinte de clique para o botão
         nextButton.setOnClickListener {
-            // Inicie a NextActivity
-            val intent = Intent(this, NextActivity::class.java)
+            val intent = Intent(this, CatalogActivity::class.java)
             startActivity(intent)
         }
     }

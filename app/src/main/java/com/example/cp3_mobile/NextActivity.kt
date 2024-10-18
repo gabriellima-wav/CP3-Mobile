@@ -1,4 +1,4 @@
-package com.example.cp3mobile  // Certifique-se de que o pacote esteja correto
+package com.example.cp3_mobile  // Certifique-se de que o pacote esteja correto
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

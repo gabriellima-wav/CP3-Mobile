@@ -13,18 +13,31 @@
         android:theme="@style/Theme.CP3Mobile"
         tools:targetApi="31">
 
+        <!-- MainActivity, que inicia o aplicativo -->
         <activity
-            android:name="com.example.cp3mobile.NextActivity"
-            android:exported="true" />
-
-        <activity
-            android:name="com.example.cp3mobile.MainActivity"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Declaração da NextActivity -->
+        <activity
+            android:name=".NextActivity"
+            android:exported="true" />
+
+        <!-- Declaração da CatalogActivity -->
+        <activity
+            android:name=".CatalogActivity"
+            android:exported="true" />
+
+        <!-- Declaração da WatchDetailsActivity -->
+        <activity
+            android:name=".WatchDetailsActivity"
+            android:exported="true" />
+
     </application>
 
 </manifest>
