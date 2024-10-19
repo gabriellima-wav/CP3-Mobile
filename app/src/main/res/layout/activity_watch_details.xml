@@ -1,59 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:padding="16dp">
 
+    <!-- Nome do Relógio -->
+    <TextView
+        android:id="@+id/tvWatchName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nome do Relógio"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Imagem do Relógio -->
+    <ImageView
+        android:id="@+id/ivWatchImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/relogio_default_image" />
+
+    <!-- Descrição do Relógio -->
+    <TextView
+        android:id="@+id/tvWatchDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Descrição do Relógio"
+        android:textSize="18sp"
+        android:textColor="@color/colorTextSecondary"
+        android:lineSpacingExtra="4dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Preço do Relógio -->
+    <TextView
+        android:id="@+id/tvWatchPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="R$ 5000,00"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:gravity="center" />
+
+    <!-- Botões para Editar e Apagar -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
 
-        <ImageView
-            android:id="@+id/ivWatchImage"
-            android:layout_width="match_parent"
-            android:layout_height="300dp"
-            android:scaleType="centerCrop" />
-
-        <TextView
-            android:id="@+id/tvWatchName"
+        <!-- Botão Editar -->
+        <Button
+            android:id="@+id/btnEditWatch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:layout_marginTop="16dp" />
+            android:text="Editar"
+            android:layout_marginEnd="8dp"/>
 
-        <TextView
-            android:id="@+id/tvWatchDescription"
+        <!-- Botão Apagar -->
+        <Button
+            android:id="@+id/btnDeleteWatch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
-            android:layout_marginTop="8dp" />
-
-        <TextView
-            android:id="@+id/tvWatchBrand"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="16sp"
-            android:text="Marca: "
-            android:layout_marginTop="8dp" />
-
-        <TextView
-            android:id="@+id/tvWatchPrice"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="16sp"
-            android:text="Preço: "
-            android:layout_marginTop="8dp" />
-
-        <TextView
-            android:id="@+id/tvWatchReleaseDate"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="16sp"
-            android:text="Data de lançamento: "
-            android:layout_marginTop="8dp" />
-
+            android:text="Apagar" />
     </LinearLayout>
 
-</ScrollView>
+</LinearLayout>

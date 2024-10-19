@@ -1,14 +1,16 @@
 package com.example.cp3_mobile
 
+import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 
 class WatchAdapter(
-    private val watches: List<Watch>,
+    private var watches: List<Watch>,
     private val onItemClick: (Watch) -> Unit
 ) : RecyclerView.Adapter<WatchAdapter.WatchViewHolder>() {
 
@@ -24,9 +26,21 @@ class WatchAdapter(
 
     override fun onBindViewHolder(holder: WatchViewHolder, position: Int) {
         val watch = watches[position]
-        holder.imageViewWatch.setImageResource(watch.imageResId)
+
+        // Carregar a imagem usando o Glide
+        if (!watch.imageUri.isNullOrEmpty()) {
+            Glide.with(holder.itemView.context)
+                .load(Uri.parse(watch.imageUri))
+                .into(holder.imageViewWatch)
+        } else {
+            // Opcional: definir uma imagem placeholder caso imageUri seja nulo ou vazio
+            holder.imageViewWatch.setImageResource(R.drawable.relogio_default_image)
+        }
+
+        // Exibir o nome do relógio
         holder.textViewWatchName.text = watch.name
 
+        // Configurar o clique do item
         holder.itemView.setOnClickListener {
             onItemClick(watch)
         }
@@ -34,5 +48,11 @@ class WatchAdapter(
 
     override fun getItemCount(): Int {
         return watches.size
+    }
+
+    // Método para atualizar a lista de relógios
+    fun updateWatches(newWatches: List<Watch>) {
+        this.watches = newWatches
+        notifyDataSetChanged()
     }
 }

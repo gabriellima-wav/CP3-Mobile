@@ -8,7 +8,8 @@ import com.google.android.material.button.MaterialButton
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var nextButton: MaterialButton
+    private lateinit var catalogButton: MaterialButton
+    private lateinit var developersButton: MaterialButton
 
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,10 +17,16 @@ class MainActivity : AppCompatActivity() {
         setTheme(R.style.AppTheme)
         setContentView(R.layout.activity_main)
 
-        nextButton = findViewById(R.id.next_button)
+        catalogButton = findViewById(R.id.catalog_button)
+        developersButton = findViewById(R.id.developers_button)
 
-        nextButton.setOnClickListener {
+        catalogButton.setOnClickListener {
             val intent = Intent(this, CatalogActivity::class.java)
+            startActivity(intent)
+        }
+
+        developersButton.setOnClickListener {
+            val intent = Intent(this, DevelopersActivity::class.java)
             startActivity(intent)
         }
     }

@@ -1,48 +1,57 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorBackground">
+    android:padding="16dp">
 
+    <!-- Texto de boas-vindas -->
     <TextView
         android:id="@+id/welcome_text"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Bem-vindo ao Catálogo de Relógios"
-        android:textColor="@color/colorOnBackground"
-        android:textSize="36sp"
+        android:textColor="@android:color/black"
+        android:textSize="28sp"
         android:textStyle="bold"
         android:gravity="center"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/catalog_button"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="32dp" />
 
+    <!-- Botão para abrir o catálogo -->
     <com.google.android.material.button.MaterialButton
         android:id="@+id/catalog_button"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Ver Catálogo"
         android:textSize="18sp"
-        app:cornerRadius="8dp"
+        android:textColor="@android:color/white"
+        app:cornerRadius="16dp"
         app:backgroundTint="@color/colorPrimary"
         app:layout_constraintTop_toBottomOf="@id/welcome_text"
-        app:layout_constraintBottom_toTopOf="@id/developers_button"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"/>
 
+    <!-- Botão para abrir a tela de desenvolvedores -->
     <com.google.android.material.button.MaterialButton
         android:id="@+id/developers_button"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Ver Desenvolvedores"
         android:textSize="18sp"
-        app:cornerRadius="8dp"
-        app:backgroundTint="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        app:cornerRadius="16dp"
+        app:backgroundTint="@color/colorSecondary"
         app:layout_constraintTop_toBottomOf="@id/catalog_button"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

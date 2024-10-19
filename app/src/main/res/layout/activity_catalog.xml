@@ -1,31 +1,48 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
+    android:background="@drawable/gradient_background"
     android:padding="16dp">
 
+    <!-- Título do Catálogo -->
     <TextView
-        android:id="@+id/catalog_title"
+        android:id="@+id/tvCatalogTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Catálogo"
+        android:text="Catálogo de Relógios"
+        android:textColor="@android:color/white"
         android:textSize="24sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"/>
 
+    <!-- RecyclerView para exibir os relógios -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewWatches"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp" />
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvCatalogTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/add_button"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"/>
 
+    <!-- Botão de adicionar relógio -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/add_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="end"
-        android:layout_margin="16dp"
         android:src="@drawable/ic_add"
-        app:backgroundTint="@color/colorPrimary" />
-</LinearLayout>
+        app:backgroundTint="@color/colorPrimary"
+        app:rippleColor="@color/colorRipple"
+        android:elevation="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="16dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

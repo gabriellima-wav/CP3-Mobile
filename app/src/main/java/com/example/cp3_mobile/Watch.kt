@@ -4,7 +4,7 @@ data class Watch(
     val id: Long,
     val name: String,
     val description: String,
-    val imageResId: Int,
+    val imageUri: String, // Usamos String para a URI da imagem
     val brand: String,
     val price: Double,
     val releaseDate: String
