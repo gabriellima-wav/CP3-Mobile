@@ -5,7 +5,7 @@ Este é o aplicativo móvel **CP3-Mobile**, que faz parte de um sistema de geren
 
 # Projeto Feito por : 
 - Gabriel Lima RM99743
-- Murilo Matos RM9
+- Murilo Matos RM552525 
 
 ## 📱 Funcionalidades
 
