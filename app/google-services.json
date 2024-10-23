@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "585410605896",
+    "project_id": "relogioscp",
+    "storage_bucket": "relogioscp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:585410605896:android:22b3bc87cae25b2c60f97d",
+        "android_client_info": {
+          "package_name": "com.example.cp3_mobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCync15C3GLaYLSYkdJXKGfovztELr96vk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
